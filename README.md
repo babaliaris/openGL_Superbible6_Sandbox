@@ -43,7 +43,7 @@ recommend you to use `premake5 clean`, because the files are scattered around in
 ## How To Run:
 **Unix Systems:** `./sandbox.sh` [sandbox.sh](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/sandbox.sh).
 
-**Windows**:  You will have to manually copy the .dll file into the directory `<$repo_dir>/buidls/debug_x64` __AFTER__ building the project.
+**Windows**:  You will have to manually copy the .dll file into the directory `<$repo_dir>/builds/debug_x64` __AFTER__ building the project.
 This will make sure that the application will load GLFW even if you run it through **Visual Studio**.
 
 ## What have I changed to the owner's code:
