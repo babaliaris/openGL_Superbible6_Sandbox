@@ -34,11 +34,9 @@ The above line will generate GNU's makefiles and will execute "make" in order to
 
 ### Cleaning
 ```
-premake5 clean
 make clean
 ```
 
-`premake5 clean` will clean GLFW build files (.o, .a, .so), and `make clean` will take care of the rest of the cleaning.
 
 You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** directories. For the GLFW cleaning, I 
 recommend you to use `premake5 clean`, because the files are scattered around in a "messy" way.
