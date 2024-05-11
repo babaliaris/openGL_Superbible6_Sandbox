@@ -41,10 +41,10 @@ You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** 
 recommend you to use `premake5 clean`, because the files are scattered around in a "messy" way.
 
 ## How To Run:
-Run the appropriate script in the root directory of your cloned project **repo_dir**. For Unix systems, run
-`./sandbox.sh` and for Windows `sandbox.bat`. The reason for that (instead of manually running `./<$repo_dir>/builds/debug_x64/sandbox`)
-is because the OS needs to find the GLFW shared library (.dll or .so), and these scripts make sure to append the
-linker's search directories to `<$repo_dir>/external/superbible6/extern/glfw-2.7.6/lib/...`
+**Unix Systems:** `./sandbox.sh` [sandbox.sh](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/sandbox.sh).
+
+**Windows**:  You will have to manually copy the .dll file into the directory `<$repo_dir>/buidls/debug_x64` __AFTER__ building the project.
+This will make sure that the application will load GLFW even if you run it through **Visual Studio**.
 
 ## What have I changed to the owner's code:
 For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:344](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/9dbc4093c5f72cefeae4dd86b9e141541bd0ddb0/external/superbible6/include/sb6.h#L344) 
