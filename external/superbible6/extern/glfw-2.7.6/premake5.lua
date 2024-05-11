@@ -51,14 +51,15 @@ project "GLFW"
     -- Linux All Configurations.
     filter "system:linux"
 		files {
-		"lib/x11/win32_enable.c",
-		"lib/x11/win32_fullscreen.c",
-		"lib/x11/win32_glext.c",
-		"lib/x11/win32_init.c",
-		"lib/x11/win32_joystick.c",
-		"lib/x11/win32_thread.c",
-		"lib/x11/win32_time.c",
-		"lib/x11/win32_window.c",
+		"lib/x11/x11_enable.c",
+		"lib/x11/x11_fullscreen.c",
+		"lib/x11/x11_glext.c",
+		"lib/x11/x11_init.c",
+		"lib/x11/x11_joystick.c",
+		"lib/x11/x11_thread.c",
+		"lib/x11/x11_time.c",
+		"lib/x11/x11_window.c",
+		"lib/x11/x11_keysym2unicode.c",
 		"lib/x11/platform.h"
 		}
 		
