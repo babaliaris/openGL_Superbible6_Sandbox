@@ -41,10 +41,7 @@ You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** 
 recommend you to use `premake5 clean`, because the files are scattered around in a "messy" way.
 
 ## How To Run:
-**Unix Systems:** `./sandbox.sh` [sandbox.sh](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/sandbox.sh).
-
-**Windows**:  You will have to manually copy the .dll file into the directory `<$repo_dir>/builds/debug_x64` __AFTER__ building the project.
-This will make sure that the application will load GLFW even if you run it through **Visual Studio**.
+**Unix Systems:** `./builds/debug_x64/sandbox`.
 
 **Now start writing your own code, using:** [$repo_dir/projects/Sandbox/src/sandbox.cpp](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/projects/Sandbox/src/sandbox.cpp) as the starting point!!!
 
