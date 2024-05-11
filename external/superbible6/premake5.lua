@@ -20,7 +20,9 @@ project "Superbible6"
 
     -- Windows All Configurations.
     filter "system:windows"
-        defines {"SUPERBIBLE6_WINDOWS"};
+        defines {
+		"SUPERBIBLE6_WINDOWS"
+		};
 
     -- Linux All Configurations.
     filter "system:linux"

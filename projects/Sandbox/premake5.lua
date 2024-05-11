@@ -18,12 +18,13 @@ project "Sandbox"
     }
 
     links {
-        "Superbible6"
+        "Superbible6",
+		"GLFW"
     }
 
     -- All configurations for LINUX.
     filter "system:linux"
-        links {"GL", "X11", "pthread",
+        links {"GL", "X11", "pthread", "m",
             "Xrandr", "Xi", "ldl", "glfw"
         }
 
@@ -35,8 +36,11 @@ project "Sandbox"
 		
 	-- All configurations for WINDOWS.
     filter "system:windows"
+		kind "WindowedApp"
         links {
-		"opengl32"
+		"opengl32",
+		"winmm",
+		"gdi32"
         }
 
 

@@ -4,6 +4,7 @@
 // OpenGL SuperBible, 5th Edition
 // Nick Haemel
 
+#ifndef SUPERBIBLE6_WINDOWS
 #include <X11/Xlib.h>
 #include <GL/gl.h>
 #include <GL/glx.h>
@@ -333,3 +334,4 @@ int main(int argc, char* argv[])
     
     return 0;
 }
+#endif
