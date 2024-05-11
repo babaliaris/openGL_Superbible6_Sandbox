@@ -1,0 +1,11 @@
+#Directories
+obj/
+builds/
+
+#Superbible6 sample code, glfw depedency x11 object files and library files.
+external/superbible6/extern/glfw-2.7.6/lib/x11/*.so
+external/superbible6/extern/glfw-2.7.6/lib/x11/*.a
+external/superbible6/extern/glfw-2.7.6/lib/x11/*.o
+
+#Makefiles.
+Makefile
