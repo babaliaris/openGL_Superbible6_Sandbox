@@ -6,14 +6,15 @@ want to install GLFW globally in my system, I decided to create a sandbox enviro
 
 From now on, I will refer to the root directory of this repo as **$repo_dir**
 
+# Windows Known ISSUE
+**Currently IT does not work on Windows:** [Windows GLFW Issue](https://github.com/babaliaris/openGL_Superbible6_Sandbox/issues/1)
+
 ## How to Compile:
 
 **Clone The Project:**
 ```
 git clone https://github.com/babaliaris/openGL_Superbible6_Sandbox.git
 ```
-
-Currently does not work on Windows: [Windows GLFW Issue](https://github.com/babaliaris/openGL_Superbible6_Sandbox/issues/1)
 
 Generate the project files using [premake5](https://premake.github.io/). How to use premake: [Using Premake](https://premake.github.io/docs/Using-Premake/) 
 ```
