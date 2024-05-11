@@ -48,7 +48,10 @@ This will make sure that the application will load GLFW even if you run it throu
 
 ## What have I changed to the owner's code:
 For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:344](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/9dbc4093c5f72cefeae4dd86b9e141541bd0ddb0/external/superbible6/include/sb6.h#L344) 
-`#elif defined _LINUX || defined __APPLE__ || __GNUC__` the **GNUC** predefined macro, for the GNU C++ compiler/preprocessor to work, else I was getting
+```
+#elif defined _LINUX || defined __APPLE__ || __GNUC__
+```
+the **GNUC** predefined macro, for the GNU C++ compiler/preprocessor to work, else I was getting
 the error `#error Undefined platform!`.
 
 ## Issues:
