@@ -36,10 +36,7 @@ The above line will generate GNU's makefiles and will execute "make" in order to
 ```
 make clean
 ```
-
-
-You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** directories. For the GLFW cleaning, I 
-recommend you to use `premake5 clean`, because the files are scattered around in a "messy" way.
+You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** directories.
 
 ## How To Run:
 **Unix Systems:** `./builds/debug_x64/sandbox`.
