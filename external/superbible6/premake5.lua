@@ -9,12 +9,13 @@ project "Superbible6"
         "src/**.c",
         "src/**.cpp",
         "src/**.hpp",
-        "%{_WORKING_DIR}external/gl3w/build/include/**.h"
+		"include/**.h",
+		"include/**.hpp"
     }
 
     includedirs {
         "include/",
-        "extern/glfw-2.7.6/include/"
+		"extern/glfw-2.7.6/include",
     }
 
     -- Windows All Configurations.

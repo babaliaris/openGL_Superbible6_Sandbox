@@ -1,3 +1,19 @@
+-- ||||||||||||||||||||||||||||||Some Helpful Functions|||||||||||||||||||||||||||||| --
+
+-- Check OS.
+function CheckOS() 
+    if ( package.config:sub(1,1) == "\\" ) then
+        return "Windows"
+    else
+        return "Linux"
+    end
+end
+
+-- ||||||||||||||||||||||||||||||Some Helpful Functions|||||||||||||||||||||||||||||| --
+
+
+
+
 -- -------------------------------Compile Assimp------------------------------- --
 function CompileGLFW()
 
@@ -12,7 +28,10 @@ function CompileGLFW()
         os.execute("cd external/superbible6/extern/glfw-2.7.6 && make x11")
     end
 end
-CompileGLFW()
+
+if CheckOS() == "Linux" then
+	CompileGLFW()
+end
 -- -------------------------------Compile Assimp------------------------------- --
 
 workspace "Superbible6"

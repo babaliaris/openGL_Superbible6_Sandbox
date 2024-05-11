@@ -542,6 +542,12 @@ public:
         return quaternion(r + q.r, v + q.v);
     }
 
+
+    inline Tquaternion operator=(const Tquaternion& q) const
+    {
+        return q;
+    }
+
     inline Tquaternion& operator+=(const Tquaternion& q)
     {
         r += q.r;

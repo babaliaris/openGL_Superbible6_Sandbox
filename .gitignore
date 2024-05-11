@@ -14,3 +14,10 @@ Makefile
 #so we won't have to write our own. It is a little bit "messy", but
 #it works!!!
 !external/superbible6/extern/glfw-2.7.6/Makefile
+
+#Visual Studio
+*.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user

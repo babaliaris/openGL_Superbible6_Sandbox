@@ -31,6 +31,13 @@ project "Sandbox"
             "%{_WORKING_DIR}/external/superbible6/extern/glfw-2.7.6/lib/x11/",
             "%{_WORKING_DIR}/external/superbible6/lib/"
         }
+		
+		
+	-- All configurations for WINDOWS.
+    filter "system:windows"
+        links {
+		"opengl32"
+        }
 
 
     --All Platforms.
