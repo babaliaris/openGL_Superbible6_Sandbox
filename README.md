@@ -35,7 +35,7 @@ premake5 clean
 make clean
 ```
 
-`premake5 clean` will clean GLFW build files (.o, .a, .so) and `make clean` will take care of the rest cleaning.
+`premake5 clean` will clean GLFW build files (.o, .a, .so), and `make clean` will take care of the rest of the cleaning.
 
 You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** directories. For the GLFW cleaning, I 
 recommend you to use `premake5 clean`, because the files are scattered around in a "messy" way.
@@ -56,8 +56,8 @@ For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:34
 the **GNUC** predefined macro, for the GNU C++ compiler/preprocessor to work, else I was getting
 the error `#error Undefined platform!`.
 
-Also, the C++ compiler was treating some "old c code" as errors insead of warnings, and the compilation was failing.
-In order to fix that, I added the build option falgs `-Wno-implicit-function-declaration` and `-Wno-int-conversion`
+Also, the C++ compiler was treating some "old c code" as errors instead of warnings, and the compilation was failing.
+In order to fix that, I added the build option flags `-Wno-implicit-function-declaration` and `-Wno-int-conversion`
 in the [Premake.lua](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/2fb3baf0a15666a6691542c00eed8010a3c90f24/external/superbible6/premake5.lua#L26) file of the owner's project.
 This **premake5** script is of my own making.
 
