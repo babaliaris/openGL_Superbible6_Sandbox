@@ -54,5 +54,10 @@ For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:34
 the **GNUC** predefined macro, for the GNU C++ compiler/preprocessor to work, else I was getting
 the error `#error Undefined platform!`.
 
+Also, the C++ compiler was treating some "old c code" as errors insead of warnings, and the compilation was failing.
+In order to fix that, I added the build option falgs `-Wno-implicit-function-declaration` and `-Wno-int-conversion`
+in the [Premake.lua](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/2fb3baf0a15666a6691542c00eed8010a3c90f24/external/superbible6/premake5.lua#L26) file of the owner's project.
+This **premake5** script is of my own making.
+
 ## Issues:
 If you have any issues, open an Issue here on GitHub.
