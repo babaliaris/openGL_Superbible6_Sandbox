@@ -41,7 +41,6 @@ project "GLFW"
 		}
 	
 		defines { 
-		"_GLFW_WIN32",
 		"_CRT_SECURE_NO_WARNINGS"
 		}
 		
@@ -71,7 +70,6 @@ project "GLFW"
 		"-D_GLFW_HAS_GLXGETPROCADDRESS",
 		"-D_GLFW_HAS_SYSCONF",
 		"-pthread",
-		"-O2",
 		"-Wall"
 		}
 		
