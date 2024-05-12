@@ -43,7 +43,7 @@ project "GLFW"
 		buildoptions {
 		"-D_GLFW_NO_DLOAD_GDI32",
 		"-D_GLFW_NO_DLOAD_WINMM",
-		"-D_MBCS",
+		"-D_MBCS"
 		}
 	
 		defines { 
