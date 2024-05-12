@@ -25,12 +25,7 @@ project "Sandbox"
     -- All configurations for LINUX.
     filter "system:linux"
         links {"GL", "X11", "pthread", "m",
-            "Xrandr", "Xi", "ldl", "glfw"
-        }
-
-        libdirs {
-            "%{_WORKING_DIR}/external/superbible6/extern/glfw-2.7.6/lib/x11/",
-            "%{_WORKING_DIR}/external/superbible6/lib/"
+            "Xrandr", "Xi", "ldl"
         }
 		
 		
