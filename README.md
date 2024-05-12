@@ -44,19 +44,3 @@ scripts into your own workspace **premake5** script ([like this one](https://git
 [this project](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/projects/Sandbox/premake5.lua)
 
 For Windows, use the relevant executable file to start the application.
-
-## What have I changed to the owner's code:
-For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:344](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/9dbc4093c5f72cefeae4dd86b9e141541bd0ddb0/external/superbible6/include/sb6.h#L344) 
-```
-#elif defined _LINUX || defined __APPLE__ || __GNUC__
-```
-the **GNUC** predefined macro, for the GNU C++ compiler/preprocessor to work, else I was getting
-the error `#error Undefined platform!`.
-
-Also, the C++ compiler was treating some "old c code" as errors instead of warnings, and the compilation was failing.
-In order to fix that, I added the build option flags `-Wno-implicit-function-declaration` and `-Wno-int-conversion`
-in the [Premake.lua](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/2fb3baf0a15666a6691542c00eed8010a3c90f24/external/superbible6/premake5.lua#L26) file of the owner's project.
-This **premake5** script is of my own making.
-
-## Issues:
-If you have any issues, open an Issue here on GitHub.
