@@ -6,7 +6,6 @@ project "GLFW"
 	
 	files {
 	"lib/enable.c",
-	"lib/enable.c",
 	"lib/fullscreen.c",
 	"lib/glext.c",
 	"lib/image.c",
@@ -37,7 +36,14 @@ project "GLFW"
 		"lib/win32/win32_thread.c",
 		"lib/win32/win32_time.c",
 		"lib/win32/win32_window.c",
+		"lib/win32/win32_dllmain.c",
 		"lib/win32/platform.h"
+		}
+		
+		buildoptions {
+		"-D_GLFW_NO_DLOAD_GDI32",
+		"-D_GLFW_NO_DLOAD_WINMM",
+		"-D_MBCS",
 		}
 	
 		defines { 
