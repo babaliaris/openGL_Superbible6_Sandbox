@@ -6,9 +6,6 @@ want to install GLFW globally in my system, I decided to create a sandbox enviro
 
 From now on, I will refer to the root directory of this repo as **$repo_dir**
 
-# Windows Known ISSUE
-**Currently it does not work on Windows:** [Windows GLFW Issue](https://github.com/babaliaris/openGL_Superbible6_Sandbox/issues/1)
-
 ## How to Compile:
 
 **Clone The Project:**
@@ -45,6 +42,8 @@ You can also manually delete the **<$repo_dir>/builds** and **<$repo_dir>/obj** 
 **Or** Include the [GLFW premake5.lua](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/external/superbible6/extern/glfw-2.7.6/premake5.lua) and [superbible6 premake5.lua](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/external/superbible6/premake5.lua)
 scripts into your own workspace **premake5** script ([like this one](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/premake5.lua)) and create a **ConsoleApp** or **WindowedApp** (For Windows) that is similar as
 [this project](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/dev/projects/Sandbox/premake5.lua)
+
+For Windows you the relevant executable file to start the application.
 
 ## What have I changed to the owner's code:
 For Linux, I had to append in [<$repo_dir>/external/superbible6/include/sb6.h:344](https://github.com/babaliaris/openGL_Superbible6_Sandbox/blob/9dbc4093c5f72cefeae4dd86b9e141541bd0ddb0/external/superbible6/include/sb6.h#L344) 
